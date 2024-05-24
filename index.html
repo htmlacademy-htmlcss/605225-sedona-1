@@ -6,11 +6,13 @@
   </head>
   <body>
     <header class="page-header">
-      <img src="#" alt="Логотип города Седона">
+      <a class ="logo-link" href="#">
+        <img src="#" alt="Логотип города Седона">
+      </a>
       <nav class="main-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -21,29 +23,29 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link-icon" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-icon">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
-          </li>
         </ul>
+        <a class="button button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main>
-      <img src="#" alt="Горы города Седона">
+    <main class="main-index">
+      <div class="background">
+        <img src="#" alt="Welcome to the gorgeous Sedona!">
+      </div>
       <section class="advantages">
         <p class="main-advertisement">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="small-advertisement">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <img src="#" alt="Гостиница в Седоне">
         <ul class="advantages-list">
           <li class="advantages-item">
+            <img src="#" alt="Гостиница в Седоне">
             <h2>Настоящий городок</h2>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
@@ -60,11 +62,11 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
+            <img src="#" alt="Мост дьявола">
             <h2>Там есть мост дьявола</h2>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
-        <img src="#" alt="Мост дьявола">
       </section>
       <section class="services">
         <p class="main-advertisement">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
@@ -87,14 +89,14 @@
       <div class="hotel-link">
         <p class="main-advertisement">Заинтересовались?</p>
         <p class="small-advertisement">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-button" href="catalog.html" type="button">Поиск гостиницы в Седоне</a>
+        <a class="button button-brown" href="catalog.html">Поиск гостиницы в Седоне</a>
       </div>
-      <section class="subcription">
+      <section class="subcription subscription-background">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscption-advertisement">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field"  placeholder="Ваш e-mail" type="email" name="subscription-email" required>
-          <button class="button subscription-button" type="submit">Подписаться</button>
+          <button class="button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
