@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -22,8 +23,8 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link-icon" href="#">
+          <li class="navigation-item-icon">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
@@ -33,7 +34,7 @@
             </a>
           </li>
         </ul>
-        <a class="button button-brown" href="#">Хочу сюда!</a>
+        <a class="button-small button-brown" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="main-inner">
@@ -109,8 +110,8 @@
                 до
               </label>
             </fieldset>
-            <button class="button button-blue" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+            <button class="button-small button-blue" type="submit">Применить</button>
+            <button class="button-small" type="reset">Сбросить</button>
           </form>
         </section>
       </header>
@@ -125,7 +126,7 @@
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a class="button-view" href="#">
-          <span class="visually-hidden">Показать</span>
+          <span class="visually-hidden">Показать плитки</span>
         </a>
         <a class="button-view" href="#">
           <span class="visually-hidden">Показать список</span>
@@ -138,8 +139,8 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <b class="hotel-card-price">От 4000₽</b>
-            <a class="button button-brown" href="#">Подробнее</a>
-            <a class="button button-blue" href="#">В избранное</a>
+            <a class="button-small button-brown" href="#">Подробнее</a>
+            <a class="button-small button-blue" href="#">В избранное</a>
             <p class="hotel-card-rating">Рейтинг: 8,5</p>
           </li>
           <li class="hotel-card">
@@ -149,8 +150,8 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <b class="hotel-card-price">От 5000₽</b>
-            <a class="button button-brown" href="#">Подробнее</a>
-            <a class="button button-green" href="#">В избранном</a>
+            <a class="button-small button-brown" href="#">Подробнее</a>
+            <a class="button-small button-green" href="#">В избранном</a>
             <p class="hotel-card-rating">Рейтинг: 9,2</p>
           </li>
           <li class="hotel-card">
@@ -160,8 +161,8 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <b class="hotel-card-price">От 2500₽</b>
-            <a class="button button-brown" href="#">Подробнее</a>
-            <a class="button button-blue" href="#">В избранное</a>
+            <a class="button-small button-brown" href="#">Подробнее</a>
+            <a class="button-small button-blue" href="#">В избранное</a>
             <p class="hotel-card-rating">Рейтинг: 6,9</p>
           </li>
           <li class="hotel-card">
@@ -171,17 +172,12 @@
             </a>
             <p class="hotel-card-type">Гостиница</p>
             <b class="hotel-card-price">От 1500₽</b>
-            <a class="button button-brown" href="#">Подробнее</a>
-            <a class="button button-blue" href="#">В избранное</a>
+            <a class="button-small button-brown" href="#">Подробнее</a>
+            <a class="button-small button-blue" href="#">В избранное</a>
             <p class="hotel-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
         <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-          </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -200,11 +196,11 @@
         </ul>
       </section>
       <section class="subcription">
-        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p class="subscption-advertisement">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="main-advertisement">Подпишитесь на рассылку</h2>
+        <p class="small-advertisement">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field"  placeholder="Ваш e-mail" type="email" name="subscription-email" required>
-          <button class="button button-blue" type="submit">Подписаться</button>
+          <button class="button-big button-blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
