@@ -14,12 +14,41 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #ffffff;
   color: #333333;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 340px;
+}
+
+.navigation-user {
+  width: 270px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -28,6 +57,21 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-sedona {
+  width: 140px;
+  margin-right: 28px;
+}
+
+.main-image {
+  display: block;
+  margin: 0 auto;
 }
 
 .button-small {
@@ -74,11 +118,32 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
 }
 
 .small-advertisement {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.services-item {
+  width: 400px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200;
+  padding: 0;
 }
 
 .advantages-item h2,
@@ -90,16 +155,27 @@ body {
 }
 
 .item-blue {
+  display: flex;
   color: #ffffff;
   background-color: #82B3D3;
+  text-align: center;
+  width: 1200px;
+}
+
+.item-blue h2 {
+  color: #ffffff;
 }
 
 .item-light-blue {
   background-color: #83B3D333;
+  text-align: center;
+  width: 400px;
 }
 
 .item-super-light-blue {
   background-color: #83B3D31F;
+  text-align: center;
+  width: 400px;
 }
 
 .subscription-background {
@@ -202,4 +278,31 @@ body {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.page-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials-list {
+  width: 142px;
+}
+
+.phone {
+  width: 331px;
+}
+
+.footer-logo {
+  width: 115px;
+}
+
+.filters-group {
+  width: 152px;
+}
+
+.filters-list {
+  padding: 0;
 }
