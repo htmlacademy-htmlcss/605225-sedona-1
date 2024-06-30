@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <nav class="main-navigation">
         <a class ="logo-link" href="#">
@@ -38,7 +39,6 @@
       </nav>
     </header>
     <main class="main-container main-index">
-      <div class="page-container">
         <div class="background">
           <img class="main-image" src="images/welcome-text.svg" width="458px" height="352px" alt="Welcome to the gorgeous Sedona!">
         </div>
@@ -47,8 +47,10 @@
           <p class="small-advertisement">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           <ul class="advantages-list">
             <li class="advantages-item item-blue">
-              <h2>Настоящий городок</h2>
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <div class="text-container">
+                <h2>Настоящий городок</h2>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
               <img src="images/hotel-overview.jpg" width="800px" height="385px" alt="Гостиница в Седоне">
             </li>
             <li class="advantages-item item-super-light-blue">
@@ -65,8 +67,10 @@
             </li>
             <li class="advantages-item item-blue">
               <img src="images/devil-bridge.jpg" width="800px" height="385px" alt="Мост дьявола">
-              <h2>Там есть мост дьявола</h2>
-              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="text-container">
+                <h2>Там есть мост дьявола</h2>
+                <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -101,10 +105,8 @@
             <button class="button-big button-blue" type="submit">Подписаться</button>
           </form>
         </section>
-      </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer-container">
         <section class="socials">
           <span class="visually-hidden">Социальные сети</span>
           <ul class="socials-list">
@@ -129,7 +131,7 @@
         <a class="logo-link" href="https://htmlacademy.ru/">
           <img class="footer-logo" src="images/logo-htmlacademy.svg" width="115px" height="33px"  alt="Логотип html academy">
         </a>
-      </div>
     </footer>
+    </div>
   </body>
 </html>
