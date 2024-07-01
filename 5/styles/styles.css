@@ -19,14 +19,10 @@ html {
 }
 
 body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #333333;
 }
 
@@ -60,8 +56,12 @@ body {
 }
 
 .page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .logo-sedona {
@@ -280,13 +280,6 @@ body {
   background-color: #F2F2F2;
 }
 
-.page-footer-container {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 .socials-list {
   width: 142px;
 }
@@ -305,4 +298,9 @@ body {
 
 .filters-list {
   padding: 0;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
 }
