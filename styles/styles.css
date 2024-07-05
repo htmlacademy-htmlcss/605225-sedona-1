@@ -19,11 +19,23 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: #f2f2f2;
   color: #333333;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-container {
@@ -40,6 +52,9 @@ body {
   margin: 0;
   padding: 0;
   width: 340px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
@@ -53,6 +68,13 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
+  padding: 20px 16px;
+  display: block;
+}
+
+.navigation-user .navigation-link {
+  min-width: 44px;
+  min-height: 64px;
 }
 
 .page-container {
@@ -72,6 +94,8 @@ body {
 .main-image {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .button-small {
@@ -110,6 +134,7 @@ body {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  margin-bottom: 69px;
 }
 
 .main-advertisement {
@@ -119,12 +144,23 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .small-advertisement {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 69px;
+}
+
+.advantages {
+  margin-top: 21px;
+  margin-bottom: 64px;
+}
+
+.services {
+  margin-bottom: 96px;
 }
 
 .services-list {
@@ -133,6 +169,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style-type: none;
 }
 
 .services-item {
@@ -144,6 +181,7 @@ body {
   flex-wrap: wrap;
   width: 1200;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item h2,
@@ -154,8 +192,24 @@ body {
   color: #000000;
 }
 
+.services-item h2 {
+  margin-top: 102px;
+  margin-bottom: 30px;
+}
+
+.advantages-item h2 {
+  margin-top: 0;
+  margin-bottom: 62px;
+}
+
+.advantages-item p,
+.services-item p {
+  margin: 0;
+}
+
 .item-blue {
   display: flex;
+  align-items: center;
   color: #ffffff;
   background-color: #82B3D3;
   text-align: center;
@@ -167,15 +221,23 @@ body {
 }
 
 .item-light-blue {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #83B3D333;
   text-align: center;
   width: 400px;
+  height: 385px;
 }
 
 .item-super-light-blue {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #83B3D31F;
   text-align: center;
   width: 400px;
+  height: 385px;
 }
 
 .subscription-background {
@@ -303,4 +365,8 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.subscription h2 {
+  margin-top: 96px;
 }
