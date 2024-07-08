@@ -9,8 +9,8 @@
     <div class="page-container">
     <header class="page-header">
       <nav class="main-navigation">
-        <a class ="logo-link" href="index.html">
-          <img class = "logo-sedona" src="images/logo-sedona.svg" width="140px" height="70px" alt="Логотип города Седона">
+        <a class="logo-link" href="index.html">
+          <img class="logo-sedona" src="images/logo-sedona.svg" width="140px" height="70px" alt="Логотип города Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -24,13 +24,13 @@
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item-icon">
-            <a class="navigation-link" href="#">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item-icon">
-            <a class="navigation-link" href="#">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
@@ -52,7 +52,7 @@
             </li>
           </ul>
           <section class="filters">
-            <span class="visually-hidden" hidden>Фильтры гостиниц</span>
+            <span class="visually-hidden">Фильтры гостиниц</span>
               <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="filters-group">
                   <legend class="filters-title">Инфраструктура:</legend>
@@ -117,6 +117,7 @@
           </section>
         </header>
         <section class="catalog">
+          <div class="catalog-top-section">
           <p class="results">Найдено гостиниц: 38</p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
@@ -132,6 +133,7 @@
           <a class="button-view" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
+          </div>
           <ul class="hotel-list">
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
@@ -199,7 +201,7 @@
         <section class="subcription">
           <h2 class="main-advertisement">Подпишитесь на рассылку</h2>
           <p class="small-advertisement">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscription-form subscription-transparent" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field"  placeholder="Ваш e-mail" type="email" name="subscription-email" required>
             <button class="button-big button-blue" type="submit">Подписаться</button>
           </form>

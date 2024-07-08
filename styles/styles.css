@@ -44,8 +44,10 @@ body {
 
 .main-navigation {
   display: flex;
+  align-items: center;
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .navigation-list {
@@ -54,7 +56,9 @@ body {
   width: 340px;
   list-style-type: none;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  margin-left: 238px;
 }
 
 .navigation-user {
@@ -72,9 +76,10 @@ body {
   display: block;
 }
 
-.navigation-user .navigation-link {
-  min-width: 44px;
-  min-height: 64px;
+.navigation-user-link {
+  width: 44px;
+  height: 64px;
+  display: block;
 }
 
 .page-container {
@@ -89,6 +94,9 @@ body {
 .logo-sedona {
   width: 140px;
   margin-right: 28px;
+  position: absolute;
+  top: 0;
+  left: 70px;
 }
 
 .main-image {
@@ -207,6 +215,12 @@ body {
   margin: 0;
 }
 
+.item-transparent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .item-blue {
   display: flex;
   align-items: center;
@@ -240,14 +254,30 @@ body {
   height: 385px;
 }
 
+.hotel-link .button-big.button-brown {
+  margin-left: 412px;
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
 .subscription-background {
   background-image: url("../images/subscribe-bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  padding-bottom: 104px;
 }
 
 .advertisement-white {
   color: #ffffff;
+}
+
+.main-advertisement.advertisement-white{
+  margin-top: 96px;
+  padding-top: 96px;
+}
+
+.page-footer{
+  padding: 40px 70px 30px;
 }
 
 .phone {
@@ -261,6 +291,8 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
+  width: 452px;
+  height: 52px;
 }
 
 .inner-header {
@@ -274,6 +306,16 @@ body {
 .inner-header h1 {
   font-size: 60px;
   line-height: 78px;
+  padding-top: 35px;
+  margin-left: 70px;
+  margin-top: 0;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  padding-left: 41px;
+  margin-left: 70px;
 }
 
 .breadcrumbs-link {
@@ -282,10 +324,20 @@ body {
   font-size: 16px;
 }
 
+.filters-list {
+  list-style-type: none;
+}
+
 .filters-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.catalog-top-section {
+  display: flex;
+  margin-left: 70px;
+  align-items: center;
 }
 
 .control {
@@ -305,6 +357,16 @@ body {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin-left: 200px;
+  margin-right: 70px;
+  width: 292px;
+  height: 49px;
+}
+
+.button-view {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
 }
 
 .hotel-card-link {
@@ -328,6 +390,12 @@ body {
   background-color: #F2F2F2;
 }
 
+.pagination {
+  list-style-type: none;
+  display: flex;
+  margin-left: 70px;
+}
+
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
@@ -335,6 +403,10 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
   font-weight: 700;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin-right: 8px;
 }
 
 .pagination-current {
@@ -342,31 +414,27 @@ body {
   background-color: #F2F2F2;
 }
 
-.socials-list {
-  width: 142px;
+.subscription-transparent .field, .subscription-background .field{
+  margin-left: 258px;
 }
 
-.phone {
-  width: 331px;
+.socials-list {
+  display: flex;
+  width: 142px;
+  list-style-type: none;
+}
+
+.socials-link {
+  width: 48px;
+  height: 40px;
+  display: block;
 }
 
 .footer-logo {
   width: 115px;
 }
 
-.filters-group {
-  width: 152px;
-}
-
-.filters-list {
-  padding: 0;
-}
-
 .page-footer {
   display: flex;
   justify-content: space-between;
-}
-
-.subscription h2 {
-  margin-top: 96px;
 }
