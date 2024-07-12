@@ -192,6 +192,10 @@ body {
   color: #000000;
 }
 
+.advantages-item {
+  box-sizing: border-box;
+}
+
 .services-item h2 {
   margin-top: 102px;
   margin-bottom: 30px;
@@ -209,7 +213,6 @@ body {
 
 .text-container {
   width: 400px;
-  box-sizing: border-box;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -218,7 +221,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-sizing: border-box;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -244,7 +246,6 @@ body {
   text-align: center;
   width: 400px;
   min-height: 385px;
-  box-sizing: border-box;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -257,7 +258,6 @@ body {
   text-align: center;
   width: 400px;
   min-height: 385px;
-  box-sizing: border-box;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -473,13 +473,17 @@ body {
 .hotel-card {
   border: 1px solid #E6E6E6;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .hotel-text-container {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 21px 36px 37px;
   column-gap: 20px;
   row-gap: 16px;
   align-items: center;
+}
+
+.hotel-text-container p {
+  margin: 0;
 }
