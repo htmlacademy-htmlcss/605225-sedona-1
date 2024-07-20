@@ -426,14 +426,14 @@ body {
   padding-left: 0;
 }
 
-.breadcrumbs-home {
+.breadcrumbs-item:nth-child(1) {
   background-image: url("../images/decoratives/home-breadcrumbs.svg");
   background-repeat: no-repeat;
   background-size: 13px 15px;
   background-position: 50% 4px;
 }
 
-.breadcrumbs-hotels {
+.breadcrumbs-item:not(:nth-child(1)) {
   background-image: url("../images/decoratives/arrow-breadcrumbs.svg");
   background-repeat: no-repeat;
   background-size: 8px auto;
@@ -504,6 +504,7 @@ body {
   line-height: 28px;
   text-decoration: none;
   color: #000000;
+  display: block;
 }
 
 .hotel-card-title {
@@ -524,6 +525,23 @@ body {
   grid-column-end: -2;
   padding: 8px 22px;
   border-radius: 4px;
+}
+
+.hotel-card-stars {
+  display: flex;
+}
+
+.star {
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/decoratives/star.svg");
+  background-repeat: no-repeat;
+  margin-right: 6px;
+}
+
+.star:last-child {
+  margin-right: 0;
 }
 
 .pagination {
