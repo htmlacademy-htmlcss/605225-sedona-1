@@ -947,8 +947,13 @@ body {
 }
 
 .modal-title {
+  font-size: 30px;
+  line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 64px;
 }
 
 .booking-form {
@@ -962,6 +967,7 @@ body {
 }
 
 .fields-list {
+  margin: 0;
   list-style-type: none;
   padding: 0;
 }
@@ -1103,13 +1109,19 @@ body {
 
 .booking-form .button-big.button-blue {
   width: 577px;
+  line-height: 24px;
+  height: 60px;
   margin-top: 48px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 10px;
 }
 
 .tooltip {
   width: 26px;
   height: 26px;
   margin-right: 46px;
+  position: relative;
 }
 
 .tooltip-toggle {
@@ -1246,7 +1258,7 @@ body {
 }
 
 .button-transparent:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .button-transparent:active {
@@ -1391,9 +1403,7 @@ body {
 }
 
 .control-input[type="checkbox"]:focus + .control-mark {
-  top: -1px;
-  left: -3px;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .control-input[type="checkbox"]:active + .control-mark::after,
@@ -1409,9 +1419,7 @@ body {
 }
 
 .control-input[type="radio"]:focus + .control-mark {
-  top: -1px;
-  left: -3px;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .control-input[type="radio"]:active + .control-mark::after,
@@ -1426,7 +1434,7 @@ body {
 
 .counter-button:focus {
   fill: #000000;
-  border: 3px solid #82B3D3;
+  outline: 3px solid #82B3D3;
   border-radius: 4px;
 }
 
@@ -1441,7 +1449,7 @@ body {
 
 .modal-close-button:focus {
   background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .modal-close-button:active {
@@ -1450,4 +1458,17 @@ body {
 
 .modal-close-button:active .close-icon {
   opacity: 0.3;
+}
+
+.control-modal-input[type="text"]:hover {
+  background-color: #E6E6E6;
+}
+
+.control-modal-input[type="text"]:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.control-modal-input[type="text"]:active {
+  outline: 2px solid #000000;
 }
