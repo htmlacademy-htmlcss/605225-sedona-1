@@ -935,7 +935,7 @@ body {
 
 .modal-close-button {
   position: absolute;
-  padding: 0;
+  padding: 16px;
   top: 64px;
   right: 52px;
   width: 52px;
@@ -943,9 +943,6 @@ body {
   background-color: #F2F2F2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/decoratives/modal-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -977,6 +974,7 @@ body {
   column-gap: 18px;
   row-gap: 4px;
   align-items: center;
+  position: relative;
 }
 
 .control-modal {
@@ -1017,7 +1015,14 @@ body {
 
 .input-field::after {
   content: "";
-  background-image: url("../images/decoratives/")
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-image: url("../images/decoratives/date.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 14px;
+  right: 20px;
 }
 
 .control-modal-input::placeholder {
@@ -1051,14 +1056,37 @@ body {
   left: 0;
 }
 
-.control-modal-input[type="number"]:not(:last-child) {
-  margin-right: 88px;
-}
-
 .control-modal-input[type="number"]::-webkit-outer-spin-button,
 .control-modal-input[type="number"]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.number-field {
+  position: relative;
+  width: 111px;
+  margin-right: 88px;
+}
+
+.counter-button {
+  fill: #7561574D;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.minus-button {
+  top: 14px;
+  left: 10px;
+}
+
+.plus-button {
+  top: 14px;
+  right: 10px;
 }
 
 .modal-container-close {
@@ -1389,5 +1417,37 @@ body {
 .control-input[type="radio"]:active + .control-mark::after,
 .control-input[type="radio"]:active + .control-mark,
 .control-input[type="radio"]:active ~ .control-label{
+  opacity: 0.3;
+}
+
+.counter-button:hover {
+  fill: #000000;
+}
+
+.counter-button:focus {
+  fill: #000000;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.counter-button:active {
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active .close-icon {
   opacity: 0.3;
 }
