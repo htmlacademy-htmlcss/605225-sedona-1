@@ -1015,6 +1015,11 @@ body {
   box-sizing: border-box;
 }
 
+.input-field::after {
+  content: "";
+  background-image: url("../images/decoratives/")
+}
+
 .control-modal-input::placeholder {
   color: #000000;
   opacity: 1;
@@ -1349,4 +1354,40 @@ body {
 .range-toggle:active {
   border: 2px solid #83B3D3;
   box-shadow: 0 7px 15px 0 #00000066;
+}
+
+.control-input[type="checkbox"]:hover + .control-mark::after,
+.control-input[type="checkbox"]:hover + .control-mark,
+.control-input[type="checkbox"]:hover ~ .control-label{
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:focus + .control-mark {
+  top: -1px;
+  left: -3px;
+  border: 3px solid #83B3D3;
+}
+
+.control-input[type="checkbox"]:active + .control-mark::after,
+.control-input[type="checkbox"]:active + .control-mark,
+.control-input[type="checkbox"]:active ~ .control-label{
+  opacity: 0.3;
+}
+
+.control-input[type="radio"]:hover + .control-mark::after,
+.control-input[type="radio"]:hover + .control-mark,
+.control-input[type="radio"]:hover ~ .control-label{
+  opacity: 0.6;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  top: -1px;
+  left: -3px;
+  border: 3px solid #83B3D3;
+}
+
+.control-input[type="radio"]:active + .control-mark::after,
+.control-input[type="radio"]:active + .control-mark,
+.control-input[type="radio"]:active ~ .control-label{
+  opacity: 0.3;
 }
