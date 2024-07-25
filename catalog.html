@@ -66,20 +66,23 @@
                   <ul class="filters-list">
                     <li class="filters-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pool" checked>
-                        Бассейн
+                        <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                       </label>
                     </li>
                     <li class="filters-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="parking" checked>
-                        Парковка
+                        <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="filters-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        Wi-Fi
+                        <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
@@ -89,43 +92,56 @@
                   <ul class="filters-list">
                     <li class="filters-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="living-group" value="hotel">
-                        Гостиница
+                        <input class="visually-hidden control-input" type="radio" name="living-group" value="hotel" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="filters-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="living-group" value="motel" checked>
-                        Мотель
+                        <input class="visually-hidden control-input" type="radio" name="living-group" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="filters-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="living-group" value="apartment">
-                        Апартаменты
+                        <input class="visually-hidden control-input" type="radio" name="living-group" value="apartment">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="filters-group">
-                  <legend class="filters-title">Стоимость, ₽:</legend>
-                  <label class="price">
-                    <input class="field"  placeholder="0" type="number" name="price-low">
-                    от
-                  </label>
-                  <label class="price">
-                    <input class="field"  placeholder="9000" type="number" name="price-high">
-                    до
-                  </label>
+                <fieldset class="filters-group-price">
+                  <legend class="filters-title-price">Стоимость, ₽:</legend>
+                  <div class="price-fields">
+                    <label for="price-low" class="price-low">от</label>
+                    <input id="price-low" class="field field-low"  value="0" type="number" name="price-low">
+                    <label for="price-high" class="price-high">до</label>
+                    <input id="price-high" class="field field-high"  value="9000" type="number" name="price-high">
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
-                <button class="button-small button-blue" type="submit">Применить</button>
-                <button class="button-small button-transparent" type="reset">Сбросить</button>
+                <div class="form-buttons">
+                  <button class="button-small button-blue" type="submit">Применить</button>
+                  <button class="button-small button-transparent" type="reset">Сбросить</button>
+                </div>
               </form>
           </section>
         </header>
         <section class="catalog">
           <div class="catalog-top-section">
-          <p class="results">Найдено гостиниц: 38</p>
+          <p class="results">Найдено гостиниц: <span class="results-count">38</span></p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
@@ -153,7 +169,7 @@
           <ul class="hotel-list">
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-amara.jpg" width="300px" height="212px" alt="Фото гостиницы Amara Resort and Spa">
+                <img class="hotel-card-image" src="images/catalog/hotel-amara.jpg" width="300" height="212" alt="Фото гостиницы Amara Resort and Spa">
                 <h3 class="hotel-card-title">Amara Resort and Spa</h3>
               </a>
               <div class="hotel-text-container">
@@ -172,7 +188,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-villas.jpg" width="300px" height="212px" alt="Фото гостиницы Villas at Poco Diablo">
+                <img class="hotel-card-image" src="images/catalog/hotel-villas.jpg" width="300" height="212" alt="Фото гостиницы Villas at Poco Diablo">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="hotel-text-container">
@@ -191,7 +207,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-desert.jpg" width="300px" height="212px" alt="Фото гостиницы Desert Quail Inn">
+                <img class="hotel-card-image" src="images/catalog/hotel-desert.jpg" width="300" height="212" alt="Фото гостиницы Desert Quail Inn">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <div class="hotel-text-container">
@@ -209,7 +225,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/catalog/hotel-greentree.jpg" width="300px" height="212px" alt="Фото гостиницы GreenTree Inn">
+                <img class="hotel-card-image" src="images/catalog/hotel-greentree.jpg" width="300" height="212" alt="Фото гостиницы GreenTree Inn">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <div class="hotel-text-container">
