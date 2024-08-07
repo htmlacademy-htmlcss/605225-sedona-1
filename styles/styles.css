@@ -227,13 +227,8 @@ body {
   margin-bottom: 64px;
 }
 
-.subscription .main-advertisement {
-  padding-top: 96px;
-}
-
 .services-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -385,6 +380,10 @@ body {
   box-sizing: border-box;
 }
 
+.subscription {
+  padding: 96px 258px 104px;
+}
+
 .subscription-background {
   background-image: url("../images/subscribe-bg.jpg");
   background-repeat: no-repeat;
@@ -397,8 +396,8 @@ body {
   color: #ffffff;
 }
 
-.main-advertisement.advertisement-white {
-  padding-top: 96px;
+.subscription .main-advertisement {
+  padding: 0;
 }
 
 .page-footer {
@@ -534,8 +533,10 @@ body {
   margin: 0;
 }
 
-.field[type="number"]::-moz-number-spinners {
+.field[type="number"],
+.control-modal-input[type="number"] {
   appearance: none;
+  -moz-appearance: textfield;
 }
 
 .field-low {
@@ -679,6 +680,7 @@ body {
   font-weight: 700;
   color: #000000;
   margin: 0;
+  min-width: 338px;
 }
 
 .select-control {
@@ -694,6 +696,7 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   padding-left: 20px;
+  padding-right: 53px;
   box-sizing: border-box;
   background-image: url("../images/decoratives/select-arrow.svg");
   background-repeat: no-repeat;
@@ -707,6 +710,8 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
   gap: 8px;
+  min-width: 160px;
+  margin-right: 70px;
 }
 
 .button-view {
@@ -819,8 +824,7 @@ body {
 }
 
 .subscription-transparent .field,
-.subscription-background .field{
-  margin-left: 258px;
+.subscription-background .field {
   border: none;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -838,10 +842,6 @@ body {
   border-bottom-left-radius: 0;
 }
 
-.subscription-transparent {
-  padding-bottom: 104px;
-}
-
 .socials-list {
   padding: 0;
   margin: 5px 0;
@@ -852,7 +852,7 @@ body {
 }
 
 .socials-link {
-  width: 48px;
+  width: 47px;
   height: 40px;
   display: block;
   position: relative;
@@ -906,14 +906,7 @@ body {
   margin-right: 70px;
 }
 
-.subscription-text {
-  padding-right: 362px;
-  padding-left: 362px;
-}
-
 .advantages .main-advertisement {
-  margin-left: 290px;
-  margin-right: 290px;
   margin-bottom: 25px;
 }
 
@@ -931,7 +924,9 @@ body {
   margin-top: 8.5px;
 }
 
-.navigation-icon, .view-icon, .logo-htmlacademy {
+.navigation-icon,
+.view-icon,
+.logo-htmlacademy {
   fill: #000000;
   position: absolute;
   top: 0;
@@ -1466,7 +1461,7 @@ body {
 
 .control-input[type="checkbox"]:hover + .control-mark::after,
 .control-input[type="checkbox"]:hover + .control-mark,
-.control-input[type="checkbox"]:hover ~ .control-label{
+.control-input[type="checkbox"]:hover ~ .control-label {
   opacity: 0.6;
 }
 
@@ -1476,13 +1471,13 @@ body {
 
 .control-input[type="checkbox"]:active + .control-mark::after,
 .control-input[type="checkbox"]:active + .control-mark,
-.control-input[type="checkbox"]:active ~ .control-label{
+.control-input[type="checkbox"]:active ~ .control-label {
   opacity: 0.3;
 }
 
 .control-input[type="radio"]:hover + .control-mark::after,
 .control-input[type="radio"]:hover + .control-mark,
-.control-input[type="radio"]:hover ~ .control-label{
+.control-input[type="radio"]:hover ~ .control-label {
   opacity: 0.6;
 }
 
@@ -1492,7 +1487,7 @@ body {
 
 .control-input[type="radio"]:active + .control-mark::after,
 .control-input[type="radio"]:active + .control-mark,
-.control-input[type="radio"]:active ~ .control-label{
+.control-input[type="radio"]:active ~ .control-label {
   opacity: 0.3;
 }
 
